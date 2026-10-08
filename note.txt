@@ -1,0 +1,9 @@
+"username": "hala",
+  "email": "hala@example.com",
+  "password": "123456"
+token : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhYzdjZjQ5OWUwZDZiMzI3YTQ4ZDk4MyIsImlhdCI6MTc5MTQ3OTYyNSwiZXhwIjoxNzk0MDcxNjI1fQ.O8XdC1h3AlqFIEauzZFBS_1vzht1gSOOX5HgvYH6nwg
+
+"id": "6ac7e203583a98b7993e30a6",
+    "username": "ahmed",
+    "email": "ahmed@example.com",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhYzdlMjAzNTgzYTk4Yjc5OTNlMzBhNiIsImlhdCI6MTc5MTQ4NDQxOSwiZXhwIjoxNzk0MDc2NDE5fQ.h8oaontWQVraqyVaEC_jLIm08dnvlZGgjn6-UBuxlvk"
