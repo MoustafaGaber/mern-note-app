@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import NoteModal from "./NoteModal";
 import { useLocation } from "react-router-dom";
+import api from "../api"
 
 const Home = () => {
   const [notes, setNotes] = useState([]);
@@ -19,9 +20,7 @@ const Home = () => {
       }
       const searchParams = new URLSearchParams(location.search);
       const search = searchParams.get("search") || "";
-      const { data } = await axios.get("/api/notes", {
-        headers: { Authorization: `Bearer ${token}` },
-      });
+      const { data } = await api.get("/notes");
       const filteredNotes = search
         ? data.filter(
             (note) =>
@@ -63,9 +62,7 @@ const Home = () => {
         setError("No authentication token found. Please log in");
         return;
       }
-      await axios.delete(`/api/notes/${id}`, {
-        headers: { Authorization: `Bearer ${token}` },
-      });
+      await api.delete(`/notes/${id}`);
       setNotes(notes.filter((note) => note._id !== id));
     } catch (err) {
       setError("Failed to delete note");
